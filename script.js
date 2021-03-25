@@ -2,6 +2,7 @@
 //DO NOT CHANGE THIS CODE
 var generateBtn = document.querySelector("#generate");
 
+//gets a number between the set variables
 function validChoice(numMin, numMax) {
   var numChoice = parseInt(prompt("How LONG do you want the password to be? "+numMin+"-"+numMax), 10);
 
@@ -17,6 +18,7 @@ function validChoice(numMin, numMax) {
     numChoice = parseInt(prompt(numChoice + ": "+errMessage+"; How LONG do you want the password to be?"), 10);
     numGood = Number.isInteger(parseInt(numChoice, 10));
   }
+  console.log(numChoice);
   return numChoice;
 }
 
@@ -29,6 +31,7 @@ function generatePassword(){
   var myStrSymb = "!@#$%^&*?*+-";
   var myStrChoice = "";
 
+  //creating my base character choices
   var myChoice = confirm("Press OK if you want UPPER case letters?");
   if (myChoice) {myStrChoice += myStrCaps;}
   myChoice = confirm("Press OK if you want LOWER case letters?");
@@ -40,10 +43,15 @@ function generatePassword(){
 
   //error checking function to get a valid length number, variables choose acceptable range
   myChoice = validChoice(8,128);
-
-  for (var i=1; i <= myChoice; i++) {
-    var charPass = Math.floor(Math.random()* myStrChoice.length + 1);
-    myPass += myStrChoice.charAt(charPass);
+  
+  //statement verifies something was chosen, else a password could not be generated
+  if (myStrChoice.length > 0) {
+    for (var i=1; i <= myChoice; i++) {
+      var charPass = Math.floor(Math.random()* myStrChoice.length + 1);
+      myPass += myStrChoice.charAt(charPass);
+    } 
+  } else {
+      myPass = "Invalid Entry: Cannot create a password without content.\n  Congratulations!  Your default password is: \n password";
   }
   return myPass;
 }
