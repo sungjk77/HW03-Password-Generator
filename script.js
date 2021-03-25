@@ -2,6 +2,7 @@
 //DO NOT CHANGE THIS CODE
 var generateBtn = document.querySelector("#generate");
 
+<<<<<<< HEAD
 function validChoice(numMin, numMax) {
   var numChoice = parseInt(prompt("How LONG do you want the password to be? "+numMin+"-"+numMax), 10);
 
@@ -46,6 +47,44 @@ function generatePassword(){
     myPass += myStrChoice.charAt(charPass);
   }
   return myPass;
+=======
+function generatePassword(){
+  //TODO: your code here
+var myPass = "";
+var myStrCaps ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var myStrLower = "abcdefghijklmnopqrstuvwxyz";
+var myStrNum = "0123456789";
+var myStrSymb = "!@#$%^&*?*+-";
+var myStrChoice = "";
+
+var myChoice = prompt("Do you want UPPER case letters?");
+if (myChoice == "y" || myChoice == "Y") {myChoice = true;} else {myChoice = false;}
+if (myChoice) {myStrChoice += myStrCaps;}
+
+var myChoice = prompt("Do you want LOWER case letters?");
+if (myChoice == "y" || myChoice == "Y") {myChoice = true;} else {myChoice = false;}
+if (myChoice) {myStrChoice += myStrLower;}
+
+var myChoice = prompt("Do you want NUMBERS?");
+if (myChoice == "y" || myChoice == "Y") {myChoice = true;} else {myChoice = false;}
+if (myChoice) {myStrChoice += myStrNum;}
+
+var myChoice = prompt("Do you want SYMBOLS?");
+if (myChoice == "y" || myChoice == "Y") {myChoice = true;} else {myChoice = false;}
+if (myChoice) {myStrChoice += myStrSymb;}
+
+var myChoice = prompt("How LONG do you want the password to be?");
+if (myChoice > 8 && myChoice <=128) {
+  //good choice
+} else {myChoice = 8;}
+console.log(myStrChoice);
+
+for (i=1; i <= myChoice; i++) {
+  var charPass = Math.floor(Math.random()* myStrChoice.length + 1);
+  myPass += myStrChoice.charAt(charPass);
+}
+return myPass;
+>>>>>>> cbed9422978867047bb377df0710537c7a43f76e
 }
 
 // Write password to the #password input
