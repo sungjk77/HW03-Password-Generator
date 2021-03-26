@@ -3,6 +3,8 @@ Found live at: https://sungjk77.github.io/HW03-Password-Generator/
 
 GitHub address: https://github.com/sungjk77/HW03-Password-Generator
 
+Screenshot: ".\assets\images\screenshot.JPG" 
+
 last modified: 3/25/2021 @ 11:05 PM PST
 
 ------------
@@ -38,7 +40,7 @@ Let the user also choose the length but must have a minimum and maximum value.
 
 ------------
 ## 📸 _**Screen Shot:**_
-![alt text](assets\images\screenshot.JPG)
+![alt text](.\assets\images\screenshot.JPG)
 
 
 
