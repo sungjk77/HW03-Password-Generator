@@ -16,16 +16,16 @@ Use existing code to generate a random password.  Let the user confirm what sets
 Let the user also choose the length but must have a minimum and maximum value.
 
 ------------
-## 💻**_index.html_**
+## 💻 _**index.html**_
 
 - Did not modify, left code as given.  Uploaded to github.
 
 ------------
-## 🎨**_style.css_**
+## 🎨 _**style.css**_
 
 - Did not modify, left code as given.  Uploaded to github.
 ------------
-## 📝**_script.js_**
+## 📝 _**script.js**_
 - Created a string that encompassed the possible choices for password characters
 - Generated a password based off of random character positions in the string.  Start off blank and added characters until it satisfied the length input
 - Changed prompts to confirms
@@ -37,7 +37,7 @@ Let the user also choose the length but must have a minimum and maximum value.
 - Added final error correction since it is possible the user would choose none of the possible types of characters.  The user's default password will be "password".
 
 ------------
-## 📸**_ Screen Shot:_** 
+## 📸 _**Screen Shot:**_
 ![alt text](assets\images\screenshot.JPG)
 
 
