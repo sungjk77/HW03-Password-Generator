@@ -9,17 +9,17 @@ last modified: 3/25/2021 @ 11:05 PM PST
 Use existing code to generate a random password.  Let the user confirm what sets will be included (Upper Case, Lower Case, Numbers, Symbols). Let the user also choose the length but must have a minimum and maximum value.
 
 ------------
-💻index.html
+## _💻index.html_**
 
 - Did not modify, left code as given.  Uploaded to github.
 
 ------------
-🎨style.css
+## _🎨style.css_**
 
 - Did not modify, left code as given.  Uploaded to github.
 
 ------------
-📝script.js
+## _📝script.js_**
 - Created a string that encompassed the possible choices for password characters
 - Generated a password based off of random character positions in the string.  Start off blank and added characters until it satisfied the length input
 - Changed prompts to confirms
@@ -31,7 +31,7 @@ Use existing code to generate a random password.  Let the user confirm what sets
 - Added final error correction since it is possible the user would choose none of the possible types of characters.  The user's default password will be "password".
 
 ------------
-📸 Screen Shot: 
+## _📸 Screen Shot:_** 
 ![alt text](assets\images\screenshot.JPG)
 
 
