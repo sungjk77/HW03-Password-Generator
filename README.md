@@ -40,7 +40,7 @@ Let the user also choose the length but must have a minimum and maximum value.
 
 ------------
 ## 📸 _**Screen Shot:**_
-![alt text](.\assets\images\screenshot.JPG)
+![alt text](https://raw.githubusercontent.com/sungjk77/HW03-Password-Generator/main/assets/images/screenshot.JPG)
 
 
 
