@@ -3,21 +3,36 @@ Found live at: https://sungjk77.github.io/HW03-Password-Generator/
 
 GitHub address: https://github.com/sungjk77/HW03-Password-Generator
 
-last modified: 3/25/2021 @ 10:10 PM PST
+last modified: 3/25/2021 @ 11:05 PM PST
 
 ------------
-<>index.html
+Use existing code to generate a random password.  Let the user confirm what sets will be included (Upper Case, Lower Case, Numbers, Symbols). Let the user also choose the length but must have a minimum and maximum value.
+
+------------
+💻index.html
 
 - Did not modify, left code as given.  Uploaded to github.
 
 ------------
-#style.css
+🎨style.css
 
 - Did not modify, left code as given.  Uploaded to github.
 
 ------------
-#script.js
+📝script.js
+- Created a string that encompassed the possible choices for password characters
+- Generated a password based off of random character positions in the string.  Start off blank and added characters until it satisfied the length input
+- Changed prompts to confirms
+- Created a function that made sure that the length choice was valid
+    - Added error correction to see if length was valid
+    - Had it generate error messages
+    - Continues until a valid choice is selected, used While loop
+    - Had to do some research and used .isInteger along with ParseInt, didn't seem to work properly without.
+- Added final error correction since it is possible the user would choose none of the possible types of characters.  The user's default password will be "password".
 
 ------------
-Screen Shot: 
-assets\images\screenshot.JPG
+📸 Screen Shot: 
+![alt text](assets\images\screenshot.JPG)
+
+
+
