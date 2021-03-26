@@ -3,7 +3,7 @@ Found live at: https://sungjk77.github.io/HW03-Password-Generator/
 
 GitHub address: https://github.com/sungjk77/HW03-Password-Generator
 
-Screenshot: ".\assets\images\screenshot.JPG" 
+Screenshot: https://github.com/sungjk77/HW03-Password-Generator/blob/0ed4a1b0f1be67d4087fb1d6cc5e9877ef623ee3/assets/images/screenshot.JPG 
 
 last modified: 3/25/2021 @ 11:05 PM PST
 
